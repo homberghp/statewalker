@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <url>https://javabits.fontysvenlo.org/statewalker</url>
     <parent>
         <groupId>nl.fontys.sebivenlo</groupId>
         <artifactId>sebipom</artifactId>
-        <version>3.0.2</version>
+        <version>3.0.3</version>
         <relativePath/>
     </parent>
-    <groupId>nl.fontys.sebivenlo</groupId>
+    <groupId>nl.homberghp</groupId>
     <artifactId>statewalker</artifactId>
     <version>3.4.1</version>
     <packaging>jar</packaging>
-    <name>SEBIVenlo :: Statewalker</name>
+    <name>homberghp :: Statewalker</name>
     <properties>
-        <pitTargetClasses>nl.fontys.sebivenlo.**</pitTargetClasses>
+        <pitTargetClasses>nl.homberghp.**</pitTargetClasses>
         <settings.localRepository>/home/hom/.m2/repository</settings.localRepository>
         <surefire.opens>
-            --add-opens nl.fontys.sebivenlo.statewalker/nl.fontys.sebivenlo.statewalkerpile=ALL-UNNAMED
-            --add-opens nl.fontys.sebivenlo.statewalker/nl.fontys.sebivenlo.statewalkerinnerpile=ALL-UNNAMED
+            --add-opens nl.homberghp.statewalker/nl.homberghp.statewalkerpile=ALL-UNNAMED
+            --add-opens nl.homberghp.statewalker/nl.homberghp.statewalkerinnerpile=ALL-UNNAMED
         </surefire.opens>
         <publish-url>fontysvenlo.org/home/javabits/public_html/</publish-url>
     </properties>

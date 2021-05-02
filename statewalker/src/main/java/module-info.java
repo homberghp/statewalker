@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-module nl.fontys.sebivenlo.statewalker {
-    exports nl.fontys.sebivenlo.statewalker;
+module nl.homberghp.statewalker {
+    exports nl.homberghp.statewalker;
     requires java.logging;
 }
