@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <repositories>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/homberghp/*</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <offline>false</offline>
+  <servers>
+    <server>
+      <id>github</id>
+      <username>homberghp</username>
+      <!-- read addess token -->
+      <password>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</password>
+    </server>
+  </servers>
+</settings>
