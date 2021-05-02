@@ -5,7 +5,6 @@
   <profiles>
     <profile>
       <id>homberghp</id>
-     
       <repositories>
 	<repository>
 	  <id>github</id>
@@ -14,6 +13,10 @@
             <enabled>true</enabled>
 	  </snapshots>
 	</repository>
+          <repository>
+              <id>fontysvenlo.org</id>
+              <url>https://www.fontysvenlo.org/repository</url>
+          </repository>
       </repositories>
     </profile>
   </profiles>
