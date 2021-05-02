@@ -2,21 +2,30 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <repositories>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/homberghp/*</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
+  <profiles>
+    <profile>
+      <id>homberghp</id>
+     
+      <repositories>
+	<repository>
+	  <id>github</id>
+	  <url>https://maven.pkg.github.com/homberghp/*</url>
+	  <snapshots>
+            <enabled>true</enabled>
+	  </snapshots>
+	</repository>
+      </repositories>
+    </profile>
+  </profiles>
   <offline>false</offline>
-  <servers>
+  <activeProfiles>
+    <activeProfile>homberghp</activeProfile>
+  </activeProfiles>
+      <servers>
     <server>
       <id>github</id>
       <username>homberghp</username>
-      <!-- read addess token -->
+      <!-- read access token -->
       <password>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</password>
     </server>
   </servers>
