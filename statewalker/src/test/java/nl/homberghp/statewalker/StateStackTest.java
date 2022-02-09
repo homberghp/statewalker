@@ -146,7 +146,14 @@ public class StateStackTest extends StackTestBase {
     public void testPeekUpOverTop() {
         StateStack<String> stack = new StateStack<String>( 5 );
         fillStack( stack );
-        assertThat( stack.peekDownFrom( "E", -1 ) ).isNull();
+        assertThat( stack.peekDownFrom( "E", -2 ) ).isNull();
+    }
+
+    @Test
+    public void testPeekBelowBottom() {
+        StateStack<String> stack = new StateStack<String>( 5 );
+        fillStack( stack );
+        assertThat( stack.peekDownFrom( "E", 8 ) ).isNull();
     }
 
     static final String[] testData = { "A", "B", "C", "D", "E" };
