@@ -9,6 +9,11 @@ on:
   pull_request:
     branches: [ master ]
 
+defaults:
+  run:
+    shell: bash
+    working-directory: statewalker
+    
 jobs:
   build:
 
@@ -22,4 +27,4 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -s settings.xml -B package --file pom.xml
