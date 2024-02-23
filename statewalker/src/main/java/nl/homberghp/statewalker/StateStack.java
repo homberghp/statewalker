@@ -7,6 +7,7 @@ import java.util.List;
  * Simple array base stack with extra methods for state walker.
  *
  * @author Pieter van den Hombergh {@code <p.vandenhombergh@fontys.nl>}
+ * @param <E> element type
  */
 class StateStack<E> implements Stack<E> {
 
@@ -91,6 +92,7 @@ class StateStack<E> implements Stack<E> {
         }
     }
 
+    /** empty stack. */
     @SuppressWarnings("unchecked")
     static final Object[] EMPTY = new Object[0];
 

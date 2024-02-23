@@ -7,6 +7,7 @@ package nl.homberghp.statewalker;
  * it, to make complete test code coverage less work.
  *
  * @author Pieter van den Hombergh {@code <p.vandenhombergh@fontys.nl>}
+ * @param <E> element type
  */
 interface Stack<E> {
 

@@ -195,7 +195,8 @@ public abstract class ContextBase<C extends ContextBase<C, D, S>,
      * Add and enter state.
      *
      * @param childState to add and enter.
-     * @param s2 end state
+     * @param s2 intermediate state
+     * @param s3 end state
      */
     final void addStateInternal( S childState, S s2, S s3 ) {
         stack.push( childState );
@@ -210,7 +211,9 @@ public abstract class ContextBase<C extends ContextBase<C, D, S>,
      * Add and enter state.
      *
      * @param childState to add and enter.
-     * @param s2 end state
+     * @param s2 intermediate state
+     * @param s3 intermediate state
+     * @param s4 end state
      */
     final void addStateInternal( S childState, S s2, S s3, S s4 ) {
         stack.push( childState );
@@ -227,7 +230,10 @@ public abstract class ContextBase<C extends ContextBase<C, D, S>,
      * Add and enter state.
      *
      * @param childState to add and enter.
-     * @param s2 end state
+     * @param s2 intermediate state
+     * @param s3 intermediate state
+     * @param s4 intermediate state
+     * @param s5 end state
      */
     final void addStateInternal( S childState, S s2, S s3, S s4, S s5 ) {
         stack.push( childState );
@@ -246,7 +252,11 @@ public abstract class ContextBase<C extends ContextBase<C, D, S>,
      * Add and enter state.
      *
      * @param childState to add and enter.
-     * @param s2 end state
+     * @param s2 intermediate state
+     * @param s3 intermediate state
+     * @param s4 intermediate state
+     * @param s5 intermediate state
+     * @param extras states
      */
     final void addStateInternal( S childState, S s2, S s3, S s4, S s5,
             S... extras ) {
@@ -654,6 +664,10 @@ public abstract class ContextBase<C extends ContextBase<C, D, S>,
         return ( C ) this;
     }
 
+    /**
+     * Get the logger for this class.
+     * @return the logger.
+     */
     public static Logger getLOGGER() {
         return LOGGER;
     }
